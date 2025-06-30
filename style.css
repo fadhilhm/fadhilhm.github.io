@@ -1,21 +1,30 @@
 html {
     font-family: "Montserrat";
-    
-    background-color: #3685c5;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
 }
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     padding: 5px;
     color: #3685c5;
     text-shadow: 2px 1px 1px black;
+    margin-bottom: 50px;
 }
 
 h2 {
     font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 2;
 }
 
 h4 {
@@ -23,19 +32,17 @@ h4 {
     letter-spacing: 0.2px;
 }
 
-
-body {
-    width: 1000px;
-    margin: auto;
-    padding: 0 10px 20px 20px;
-    border: 5px solid black;
-    background-color: white;
-}
-
-p, li {
+p {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.2px;
+}
+
+.mainText {
+    width: 1000px;
+    margin: auto;
+    padding: 0 20px 20px 20px;
+    background-color: white;
 }
 
 .image {
@@ -45,4 +52,66 @@ p, li {
     max-width: 100%;
     text-align: center;
     display: block;
+
+}
+
+.header1Underline {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #3685c5;
+    overflow: hidden;
+    display: grid;
+    list-style: none;
+}
+
+.navigation .logo {
+    float: left;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0px 15px 0px 15px;
+}
+
+.navigation li {
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navigation a {
+    float: right;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: #000000;
+}
+
+.navigation a:active {
+    background-color: #3685c5;
+    color: #ddd;
+}
+
+.navigation img {
+    width: auto;
+    height: 81px;
+    text-align: center;
+    border: 2px solid #000000;
 }
